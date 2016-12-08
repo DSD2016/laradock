@@ -42,7 +42,8 @@ services:
             context: ./php-fpm
             dockerfile: Dockerfile-70
         volumes_from:
-            - applications
+            - api
+            - web
         expose:
             - "9000"
         links:
